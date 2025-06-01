@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="Interest_cal_style.css">
+</head>
+
+<body>
+
+    <div class="bodydiv">
+        <div class="title">INTEREST CALCULATOR</div>
+        <div class="input_details">
+            <div class="enter_amount">
+                <p>Enter the amount(Principal)</p>
+                <input type="text" id="Entered_Amount" placeholder="Enter Amount(Rs.)">
+            </div>
+            <!-- Calender dates for time period Starting Date -->
+            <div class="enter_time">
+                <p>Starting Date</p>
+                <input type="date" id="Starting_Date" />
+            </div>
+            <div class="enter_time">
+                <p>Ending Date</p>
+                <input type="date" id="Ending_Date" />
+            </div>
+
+            <!-- Radio Buttons for Rate Entry -->
+            <div class="rate_radio_button">
+                <label class="radio_label">
+                    <input type="radio" name="Rate_Type" id="Rate_percent_Radio" value="Rate_percent_Radio">Rate of
+                    Interest(%)
+                </label>
+                <label class="radio_label">
+                    <input type="radio" name="Rate_Type" id="Rate_Rupess_Radio" value="Rate_Rupess_Radio">Rate of
+                    Interest (Rs.)
+                </label>
+            </div>
+
+            <!-- Rate Text feild -->
+            <div class="enter_rate">
+                <p id="Rate_text">Enter the Rate of Interest</p>
+                <input type="text" id="Entered_Rate" placeholder="Rate of Interest">
+            </div>
+            <!-- Radio Buttons for the mode of Interest Calculation -->
+            <div class="radio_buttons">
+                <label class="radio_label">
+                    <input type="radio" name="Interest_Type" id="Simple_Interest_Radio" value="Simple_Interest">Simple
+                    Interest
+                </label>
+                <label class="radio_label">
+                    <input type="radio" name="Interest_Type" id="Compound_Interest_Radio"
+                        value="Compound_Interest">Compound Interest
+                </label>
+
+                <!-- Menu for Compound interest calculation time period -->
+                <label id="n_value_for_compound">No Of Times the Interest is Compounded per Year
+                    <select id="n">
+                        <option value="1" selected>Annually</option>
+                        <option value="2">Semi-Annually</option>
+                        <option value="4">Quaterly</option>
+                        <option value="12">Monthly</option>
+                        <option value="365">Daily</option>
+                    </select>
+                </label>
+
+            </div>
+            <!-- Calculate Button -->
+            <button id="Calculate">CALCULATE</button>
+            <p id="Status_msg">Hey,I am your Status Bar</p>
+        </div>
+    </div>
+
+    <div class="result">
+        <div class="Output_details">
+            <p id="result_title">RESULT</p>
+            <div class="result_amount">
+                <p>Principal amount:<span id="Principal_amount">0000</span></p>
+            </div>
+            <div class="result_time">
+                <p>Time Period(Months):<span id="Time_Period_M">0000</span></p>
+                <p>Time Period(Years+Months):<span id="Time_Period_Y_M">0000</span></p>
+            </div>
+            <div class="result_rate">
+                <p>Rate of Interest(%):<span id="Rate_percent">0000</span></p>
+                <p>Rate(Rs.): <span id="Rate_Rs">0000</span></p>
+            </div>
+            <div class="result_Interest">
+                <p>Simple Interest(Rs.):<span id="SI_Rs">0000</span></p>
+                <p>Total Amount(Rs.): <span id="Total_amount_Rs">0000</span></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- /////////////////////////////////////////////////// -->
+    <script src="Interest_cal_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('Poster.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.bodydiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    height: 100px;
+    width: 500px;
+    margin-left: 70rem;
+    border-radius: 2rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FF1818;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_details {
+    margin-top: 75px;
+    margin-right: 15rem;
+    background-color: #5463FF;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 850px;
+}
+
+.enter_amount,
+.enter_time,
+.enter_rate {
+    display: flex;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.enter_amount input,
+.enter_rate input {
+    margin-left: 50px;
+    background-color: #ECECEC;
+    border-radius: 2rem;
+    padding: 0 0.4rem;
+    width: 200px;
+    height: 2rem;
+}
+
+.enter_amount p,
+.enter_time p,
+.enter_rate p {
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enter_time input[type="date"] {
+    border-radius: 2rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    background-color: #ECECEC;
+    border: none;
+    width: 250px;
+    cursor: pointer;
+}
+
+.Date_feild {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+.radio_buttons {
+    padding-bottom: 1rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.radio_label {
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#n_value_for_compound {
+    opacity: 0;
+    padding-right: 1rem;
+}
+
+#n {
+    border-radius: 2rem;
+    height: 30px;
+}
+
+.input_details button {
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #FFC300;
+}
+
+.Output_details {
+    margin-top: 50px;
+    margin-left: 3rem;
+    background-color: #9694FF;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50rem;
+
+}
+
+.result_amount,
+.result_time,
+.result_rate,
+.result_Interest {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.result_amount p,
+.result_time p,
+.result_rate p,
+.result_Interest p {
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#result_title {
+    font-weight: bolder;
+    font-size: 3rem;
+    background-color: #640D5F;
+    color: white;
+}
+
+#Status_msg {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.rate_radio_button {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.Date_feild {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
